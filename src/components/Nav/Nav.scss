@@ -1,0 +1,46 @@
+$APPBAR_HEIGHT: 60px;
+
+nav{
+	position: fixed;
+	top: 60px;
+	width: 100%;
+	height: $APPBAR_HEIGHT;
+	line-height: $APPBAR_HEIGHT;
+	background-color: #fff;
+	box-shadow: 0 0 10px #ccc;
+	z-index: 100;
+	overflow: auto;
+		
+	.nav{
+		height: inherit;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: left;
+		padding-left: 20px;
+
+		&__item{
+			font-size: 14px;
+			list-style: none;
+			display: inline-block;
+			color: #555b6c;
+			padding: 0 20px;
+			border-right: 1px solid #f4f5f5;
+			border-left: 1px solid #f4f5f5;
+			height: inherit;
+			box-sizing: border-box;
+			text-align: center;
+			white-space: nowrap;
+			cursor: pointer;
+		}
+
+		&__item--active{
+			background-color: #f4f9fb;
+			border-right: 1px solid #e3e8ed;
+			border-left: 1px solid #e3e8ed;
+			font-weight: bold;	
+		}
+	}
+}

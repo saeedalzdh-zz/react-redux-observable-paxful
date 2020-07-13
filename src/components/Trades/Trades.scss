@@ -1,0 +1,11 @@
+.app{
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	height: calc(100% - 120px);
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	justify-content: space-between;
+	background-color: #f6f7fa;
+}
