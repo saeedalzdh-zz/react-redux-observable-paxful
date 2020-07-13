@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Routes from './components/Routes/Routes';
+import { ErrorHandling } from './components/ErrorHandling';
 import * as serviceWorker from './serviceWorker';
+import {Provider} from 'react-redux';
+import {store} from './store';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <ErrorHandling>
+            <Provider store={store}>
+                <Routes />
+            </Provider>
+        </ErrorHandling>
     </React.StrictMode>,
     document.getElementById('root')
 );
